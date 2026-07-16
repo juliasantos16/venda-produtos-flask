@@ -4,7 +4,7 @@ from .interfaces.products_repository import ProductsRepositoryInterface
 é importante especificar o quão necessario são os elementos do banco que estamos usando,
 quando estamos mexendo com mais de um banco.  
 """
-class ProductsRepository:
+class ProductsRepository(ProductsRepositoryInterface):
     def __init__(self, conn: Connection) -> None:         
            self.__conn = conn 
            

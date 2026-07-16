@@ -6,4 +6,4 @@ class ProductFinder:
                 redis_repo, 
                 products_repo: ProductsRepositoryInterface) -> None:
         self.__redis_repo = redis_repo
-        self.__products.repo = products_repo
+        self.__products_repo = products_repo
