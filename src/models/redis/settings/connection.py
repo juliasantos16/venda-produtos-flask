@@ -1,4 +1,4 @@
-from redis import Redis # conexão com redis
+from redis import Redis         # conexão com redis
 
 class RedisConnectionHandler:
     def __init__(self) -> None:
