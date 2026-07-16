@@ -3,7 +3,7 @@ from .interfaces.redis_repository import RedisRepositoryInterface
 
 class RedisRepository(RedisRepositoryInterface):
     def __init__(self, __redis_conn: Redis) -> None:
-        self.__redis_conn = redis_conn      # salvando como um atributo privado
+        self.__redis_conn = __redis_conn      # salvando como um atributo privado
 
     def insert(self, key: str, value: any) -> None:   # métodos -----------
         self.__redis_conn.set(key, value)
