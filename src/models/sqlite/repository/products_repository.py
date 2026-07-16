@@ -1,4 +1,5 @@
 from sqlite3 import Connection
+from .interfaces.products_repository import ProductsRepositoryInterface
 """
 é importante especificar o quão necessario são os elementos do banco que estamos usando,
 quando estamos mexendo com mais de um banco.  
@@ -28,5 +29,3 @@ class ProductsRepository:
             (name, price, quantity,)
         )
         self.__conn.commit()
-
-# (?, ?, ?) são chamados de placeholders (ou marcadores de posição). Eles servem como "reservas de espaço".
