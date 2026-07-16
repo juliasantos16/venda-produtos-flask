@@ -6,12 +6,12 @@ class SqliteConnectionHandle:
         self.__connection_string = "storage.db"     # string de conexão com o banco que existe no diretório raiz
         self.__conn = None
 
-    def connect(self) -> Connection:      
+    def connect(self) -> Connection:      # cria a conexão, a partir da string de conexão
         conn = sqlite3.connect(
             self.__connection_string,
             check_same_thread=False
             ) 
-        self.__conn = conn
+        self.__conn = conn                # retorna a conexão
         return conn
 
     def get_connection(self) -> Connection:
