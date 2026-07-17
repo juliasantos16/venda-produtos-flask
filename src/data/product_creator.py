@@ -11,7 +11,7 @@ class ProductCreator:
         self.__products_repo = products_repo
     
     def create (self, http_request: HttpRequest) -> HttpResponse:
-        body = http_request
+        body = http_request.body
 
         name = body.get("name")
         price = body.get("price")
@@ -22,7 +22,7 @@ class ProductCreator:
 
         return self.__format_resonse()
 
-    def __insert_product_in_sql(self, name: float, quantity: int) -> None:
+    def __insert_product_in_sql(self, name: str, price: float, quantity: int) -> None:
         self.__products_repo.insert_product(name, price, quantity)
 
     def __insert_in_cache(self, name: str, price: float, quantity: int) -> None:
