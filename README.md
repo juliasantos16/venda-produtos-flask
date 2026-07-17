@@ -1,6 +1,6 @@
 ### <small>Venda de Produtos API</small>
 
-<small>API desenvolvida em Flask para gerenciamento, cadastro e busca de produtos.</small>
+<small>API em Flask para gerenciamento, cadastro e busca de produtos.</small>
 
 ---
 
@@ -9,7 +9,7 @@
 
 ---
 
-#### <small>Estrutura do Projeto</small>
+#### <small>Estrutura</small>
 <small>
 
 ```text
