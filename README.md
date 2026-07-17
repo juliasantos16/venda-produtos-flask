@@ -1,6 +1,6 @@
 ### <small>Venda de Produtos API</small>
 
-<small>API em Flask para gerenciamento, cadastro e busca de produtos.</small>
+<small>Projeto de API para venda de produtos, demonstrando como o Redis pode ser utilizado para melhorar o desempenho de consultas.</small>
 
 ---
 
